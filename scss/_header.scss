@@ -1,0 +1,96 @@
+#hd-principal
+{
+    padding: 30px 0;
+}
+
+.ss-box-header 
+{
+    @include make-sm-column(4);
+    @include make-md-column(4);
+    @include make-lg-column(4);
+    text-align: center;
+}
+
+.redes-sociais
+{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    li
+    {
+        border-radius: $borderRadius;
+        float: left;
+        margin: 0 5px;
+        padding: 0;
+        list-style: none;
+        width: 35px;
+        height: 35px;
+        overflow: hidden;
+        a 
+        {
+            background: $colorDestaque2;
+            color: $secondaryColor;
+            display: block;
+            padding: 5px 0;
+            text-align: center;
+            i 
+            {
+                font-size: 1em;
+                line-height: 1em;
+            }
+        }
+    }
+}
+
+.logo 
+{
+    display: block;
+    width: 215px;
+    margin: 0 auto;
+
+    *
+    {
+        max-width: 100%;
+    }
+}
+
+.menu 
+{
+    float: right;
+
+    h6 
+    {
+        display: inline-block;
+        font-size: $fontSizeBase * 1.5;
+        line-height: 1.2em;
+        font-weight: $fontWeightSemiBold;
+        margin: 8px 20px;
+    }
+
+    #menu-mobile 
+    {
+        position: relative;
+        float: right;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-image: none;
+        border: 0 none;
+        border-radius: 0;
+        outline: none;       
+
+        .icon-bar
+        {
+            background-color: $colorDestaque1;
+            display: block;
+            border-radius: 8px;
+            width: 50px;
+            height: 8px;
+            & +.icon-bar
+            {
+                margin-top: 5px;
+            }
+        }        
+
+    }
+}

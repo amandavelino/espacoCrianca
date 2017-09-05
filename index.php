@@ -5,8 +5,7 @@
 
     <div class="ss-wrapper">
         <?php include("./incs/header.php"); ?>
-        <main>
-        </main>
+        <main></main>
     </div>
     <!-- end .ss-wrapper -->
     <?php include("./incs/footer.php"); ?>

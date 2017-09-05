@@ -8,14 +8,14 @@ body
 {
     color: $primaryColor;
     font-family: $primaryFont;
-    font-size: $fontSizeBase * 1.6;
+    font-size: $fontSizeBase * 1.8;
     font-weight: $fontWeightNormal;
 }
-
+ 
 img 
 {
     display: inline-block; 
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
 
 a,
@@ -31,4 +31,14 @@ p
     font-size: $fontSizeBase * 1.8;
     font-weight: $fontWeightNormal;
     line-height: 1.5em;
+}
+
+.lft 
+{
+    text-align: left;
+}
+
+.rgt 
+{
+    text-align: right;
 }
