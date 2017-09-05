@@ -1,0 +1,32 @@
+#ft-principal
+{
+    background: $colorDestaque1;
+    padding: 40px 0;
+
+    @include breakpoint($allCelular)
+    {
+        padding-top: 0;
+    }
+
+    * 
+    {
+        color: $secondaryColor;
+    }
+
+    .ss-footer-box
+    {
+        padding: 0 15px;
+        width: 33.3333%;
+        float: right;
+        position: relative;
+    
+        @include breakpoint($allCelular)
+        {
+            width: 90%;
+            float: none;
+            padding: 20px 0;
+            margin: 0 auto;
+            overflow: hidden;
+        } 
+    }
+}

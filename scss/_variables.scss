@@ -1,0 +1,41 @@
+/*
+    font-family: 'Raleway', sans-serif;
+*/
+ 
+$colorDestaque1: #ec3c88;
+$colorDestaque2: #13bbce;
+
+//Background Colors
+$bgColorPrimary: $colorDestaque1;
+
+//Cores
+$primaryColor: #353535;  
+$secondaryColor: #fff;
+
+//Fontes  
+$primaryFont: 'Raleway', Tahoma, Arial, sans-serif;
+
+$fontSizeBase: 10px;
+$fontWeightNormal: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+//Transitions
+$transitionAll: all .5s ease-in-out;
+
+//Media Queries
+
+    //Desktops
+    $largeDesktop: 1200px; // > 1200px
+    $smallDesktop: 992px 1199px; // entre 1200px e 992px 
+    $allDesktop: 992px; // > 992px
+
+    //Tablets
+    $tablet: 768px 991px; //tablets portrait: 
+
+    //Celular
+    $celular: 768px;
+    $allCelular: 0 767px; // todos os dispositivos móveis < 768px
+    $largeCelular: 481 767px;
+    $smallCelular: 0 480px; 

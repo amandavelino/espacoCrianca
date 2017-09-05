@@ -1,0 +1,109 @@
+/* LightView Lightbox Styles */
+
+    .lv_shadow,
+    .lv_slider
+    {
+        display: none!important;
+    }
+
+    .lv_content_wrapper
+    {
+        max-width: 100%;
+    }
+
+    .lv_side,
+    .lv_side_button
+    {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .lv_overlay
+    {
+        background: #e7e7e7!important;
+    }
+
+    .lv_side_left
+    {
+        margin-left: -55px;
+    }
+
+    .lv_side_right
+    {
+        margin-right: -55px;
+    }
+
+    .lv_side_button_next,
+    .lv_side_button_previous
+    {
+        background-image: url("../imgs/btn-lightbox-gray.png")!important;
+        background-repeat: no-repeat;
+    }
+
+    .lv_side_button_next
+    {
+        background-position:1px -119px!important;
+    }
+ 
+    .lv_side_button_previous
+    {
+        background-position:1px -56px!important;
+    }
+
+    .lv_window_mac .lv_button_top_close
+    {
+        background-image: url("../imgs/btn-lightbox-gray.png");
+        background-position: 0 0;
+        right: 19px;
+        left: initial;
+    }
+
+    .lv_slider .lv_slider_numbers
+    {
+        display: none;
+    }
+
+/* Texto Items */
+
+    .lightview-container
+    {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 0 2em 0;
+    }
+
+    header.lightview-header
+    {
+        text-align: center;
+        margin: 0 0 3em 0;
+    }
+
+    header.lightview-header h5 
+    {
+        color: #283a53;
+        font-size: 1.6em;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1em;
+        margin-top: -0.5em;
+    }
+
+    .lightview-conteudo p 
+    {
+        color: #a0a9b6;
+        line-height: 1.6em;
+        font-size: 1.4em;
+    }
+
+    .lv_title 
+    {
+        color: $primaryColor;
+        font-family: $primaryFont;
+        font-size: $fontSizeBase * 1.5;
+        font-weight: $fontWeightSemiBold;
+        line-height: 1.2em;
+        text-shadow: none;
+        text-transform: uppercase;
+    }
