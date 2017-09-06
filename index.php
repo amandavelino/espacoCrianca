@@ -8,6 +8,7 @@
         <main>
             <?php include("./incs/slider.php"); ?>
             <?php include("./incs/proposta.php"); ?>
+            <?php include("./incs/sobre.php"); ?>
         </main>
     </div>
     <!-- end .ss-wrapper -->

@@ -1,14 +1,16 @@
 <section class="sessao ss-proposta-midia">
 
+    <header>
+        <div class="container">
+            <h2>Proposta Pedagógica</h2>
+        </div>
+    </header>
+
     <div class="sessao ss-box ss-proposta">
 
         <div class="container">
 
             <div class="ss-ct-box ss-ct-mr ss-proposta">
-
-                <header>
-                    <h2>Proposta Pedagógica</h2>
-                </header>
 
                 <p>Baseada na teoria das <strong>inteligências múltiplas</strong> (Multiple Inteligentes – EUA – H. GARDNER), a escola <strong>Espaço Criança</strong> tem como proposta um aprofundamento educacional que complementa o letrado, estimulando as crianças a conhecerem qual a área da sua personalidade que mais se destaca e assim <strong>valorizá-la.</strong></p>
 

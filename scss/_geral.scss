@@ -65,14 +65,18 @@ strong
 
     .ss-box
     {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 
-    .ss-ct-box 
+    .sessao
     {
         header 
         {
-            padding-left: 100px;
+            h2 
+            {
+                padding: 80px 0 0 100px;
+                margin: 0;
+            }
         }
     }
 
@@ -91,7 +95,7 @@ strong
         border: 5px solid;
         display: inline-block;
         position: relative;
-        transform: translateX(40px) translateY(75px) rotateZ(7deg);
+        transform: translateX(40px) translateY(0) rotateZ(7deg);
         transform-origin: -50% -50%;
 
         &.ss-up 
@@ -107,7 +111,7 @@ strong
             border-color: $colorBorderYellow;          
         }
 
-        img 
+        img  
         {
             max-width: 100%;
         }
@@ -115,6 +119,11 @@ strong
     }
 
 /* Sessão Proposta */
+
+    .ss-proposta
+    {
+        padding-top: 0;
+    }
 
     .ss-proposta-video
     {
@@ -129,12 +138,13 @@ strong
     {
            
         position: relative;
+        padding: 80px 0;
 
         &::after 
         {
             content: "";
-            background: url("../imgs/bg-sketch.gif") no-repeat 50% -100%;
-            //background: url("../imgs/bg-sketch.svg") no-repeat 50% -100%;            
+            background: url("../imgs/bg-sketch.gif") no-repeat 50% 0;
+            //background: url("../imgs/bg-sketch.svg") no-repeat 50% 0;            
             position: absolute;
             top: 0;
             left: 0;
@@ -146,7 +156,7 @@ strong
 
         .ss-img
         {
-            transform: translateX(50px) translateY(-75px) rotateZ(7deg);
+            transform: translateX(40px) translateY(-75px) rotateZ(7deg);
 
             &.ss-up 
             {
