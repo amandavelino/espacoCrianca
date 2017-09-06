@@ -5,7 +5,10 @@
 
     <div class="ss-wrapper">
         <?php include("./incs/header.php"); ?>
-        <main></main>
+        <main>
+            <?php include("./incs/slider.php"); ?>
+            <?php include("./incs/proposta.php"); ?>
+        </main>
     </div>
     <!-- end .ss-wrapper -->
     <?php include("./incs/footer.php"); ?>

@@ -8,6 +8,21 @@
 <script>
 
     $(document).ready(function(){ 
+
+        $('.owl-home').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true,
+            center: true,
+            smartSpeed: 500,
+            items: 1,
+            nav: false,
+            dots: true,
+            navText: ['<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'],
+            loop: true,
+            margin: 0
+        });
+
     });//
     
 </script> 

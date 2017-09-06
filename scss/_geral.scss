@@ -18,6 +18,15 @@ img
     margin-bottom: 0; 
 }
 
+p  
+{
+    color: $primaryColor;
+    font-size: $fontSizeBase * 1.8;
+    font-weight: $fontWeightNormal;
+    line-height: 1.5em;
+    margin: 30px 0;
+}
+
 a,
 a:hover,
 a:focus 
@@ -25,12 +34,9 @@ a:focus
     text-decoration: none;
 }
 
-p  
+strong 
 {
-    color: $primaryColor;
-    font-size: $fontSizeBase * 1.8;
-    font-weight: $fontWeightNormal;
-    line-height: 1.5em;
+    font-weight: $fontWeightBold;
 }
 
 .lft 
@@ -42,3 +48,115 @@ p
 {
     text-align: right;
 }
+
+/* Títulos */
+
+    h2 
+    {
+        color: $colorDestaque1;
+        font-size: $fontSizeBase * 3.4;
+        font-weight: $fontWeightSemiBold;
+        line-height: 1.5em;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+/* Sessões */
+
+    .ss-box
+    {
+        padding: 80px 0;
+    }
+
+    .ss-ct-box 
+    {
+        header 
+        {
+            padding-left: 100px;
+        }
+    }
+
+    .ss-ct-mr
+    {
+        @include make-lg-column(7);
+    }
+
+    .ss-ct-mn
+    {
+        @include make-lg-column(5);
+    }
+    
+    .ss-img 
+    {
+        border: 5px solid;
+        display: inline-block;
+        position: relative;
+        transform: translateX(40px) translateY(75px) rotateZ(7deg);
+        transform-origin: -50% -50%;
+
+        &.ss-up 
+        {
+            border-color: $colorBorderBlue;
+            z-index: 20;
+            margin-top: -80px;
+            margin-left: 150px;              
+        }
+
+        &.ss-down 
+        {
+            border-color: $colorBorderYellow;          
+        }
+
+        img 
+        {
+            max-width: 100%;
+        }
+
+    }
+
+/* Sessão Proposta */
+
+    .ss-proposta-video
+    {
+        .container 
+        {
+            background: url("../imgs/bg-tintas.jpg") no-repeat center right;
+            //background: url("../imgs/bg-tintas.svg") no-repeat center right;
+        }
+    }
+
+    .ss-midia 
+    {
+           
+        position: relative;
+
+        &::after 
+        {
+            content: "";
+            background: url("../imgs/bg-sketch.gif") no-repeat 50% -100%;
+            //background: url("../imgs/bg-sketch.svg") no-repeat 50% -100%;            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            z-index: -1;
+        }
+
+        .ss-img
+        {
+            transform: translateX(50px) translateY(-75px) rotateZ(7deg);
+
+            &.ss-up 
+            {
+                border-color: $colorBorderPink;         
+            }
+    
+            &.ss-down 
+            {
+                border-color: $colorBorderBlue;          
+            }
+
+        }
+    }
