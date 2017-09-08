@@ -21,7 +21,7 @@
                 <div class="ss-right madeBy">
                     <p>Desenvolvido por</p>
                     <a href="#" target="_blank" title="Desenvolvido por W2D Comunicação">
-                        <img src="./imgs/w2d.svg" width="55" border="0">
+                        <img src="./imgs/w2d.svg" width="55" onerror="this.onerror=null;this.src='./imgs/w2d.png'" border="0">
                     </a>
                 </div>
                 <!-- ss-right -->    

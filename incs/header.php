@@ -30,7 +30,7 @@
 
         <div class="ss-box-header">
             <h1 class="sr-only">Escola Espaço Criança</h1>
-            <a href="#" class="logo"><img src="./imgs/espacocrianca.svg" onerror="this.src='./imgs/espacocrianca.png'" border="0" alt="Escola Espaço Criança"></a>
+            <a href="#" class="logo"><img src="./imgs/espacocrianca.svg" onerror="this.onerror=null;this.src='./imgs/espacocrianca.png'" border="0" alt="Escola Espaço Criança"></a>
         </div><!-- /ss-box-header -->
 
         <div class="ss-box-header rgt">

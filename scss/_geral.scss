@@ -1,65 +1,81 @@
-*
-{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;    
-}
+/* Geral */
 
-body 
-{
-    color: $primaryColor;
-    font-family: $primaryFont;
-    font-size: $fontSizeBase * 1.8;
-    font-weight: $fontWeightNormal;
-}
- 
-img 
-{
-    display: inline-block; 
-    margin-bottom: 0; 
-}
+    *
+    {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;    
+    }
 
-p  
-{
-    color: $primaryColor;
-    font-size: $fontSizeBase * 1.8;
-    font-weight: $fontWeightNormal;
-    line-height: 1.5em;
-    margin: 30px 0;
-}
+    body 
+    {
+        color: $primaryColor;
+        font-family: $primaryFont;
+        font-size: $fontSizeBase * 1.8;
+        font-weight: $fontWeightNormal;
+    }
+    
+    img 
+    {
+        display: inline-block; 
+        margin-bottom: 0; 
+    }
 
-a,
-a:hover,
-a:focus 
-{
-    text-decoration: none;
-}
+    p  
+    {
+        color: $primaryColor;
+        font-size: $fontSizeBase * 1.8;
+        font-weight: $fontWeightNormal;
+        line-height: 1.5em;
+        margin: 30px 0;
+    }
 
-strong 
-{
-    font-weight: $fontWeightBold;
-}
+    a,
+    a:hover,
+    a:focus 
+    {
+        text-decoration: none;
+    }
 
-.lft 
-{
-    text-align: left;
-}
+    strong 
+    {
+        font-weight: $fontWeightBold;
+    }
 
-.rgt 
-{
-    text-align: right;
-}
+    .lft 
+    {
+        text-align: left;
+    }
+
+    .rgt 
+    {
+        text-align: right;
+    }
 
 /* Títulos */
 
-    h2 
+    h1, h2, h3, h4, h5, h6 
     {
         color: $colorDestaque1;
-        font-size: $fontSizeBase * 3.4;
         font-weight: $fontWeightSemiBold;
-        line-height: 1.5em;
+        line-height: 1.4em;
         padding: 0;
         margin: 20px 0;
     }
+
+    h2 
+    {
+        font-size: $fontSizeBase * 3.4;
+    }
+
+    h3 
+    {
+        font-size: $fontSizeBase * 2.8;
+    } 
+    
+    h4 
+    {
+        font-size: $fontSizeBase * 2.2;
+    }     
 
 /* Sessões */
 
@@ -143,8 +159,8 @@ strong
         &::after 
         {
             content: "";
-            background: url("../imgs/bg-sketch.gif") no-repeat 50% 0;
-            //background: url("../imgs/bg-sketch.svg") no-repeat 50% 0;            
+            background: url("../imgs/bg-sketch.png") no-repeat 50% 0;
+            background: url("../imgs/bg-sketch.svg") no-repeat 50% 0;            
             position: absolute;
             top: 0;
             left: 0;
@@ -169,4 +185,160 @@ strong
             }
 
         }
+    }
+
+/* Sessão Sobre */
+
+    .ss-sobre 
+    {
+        header
+        {
+            h2 
+            {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .box-articles
+    {
+        overflow: hidden;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .separador-articles 
+    {
+        background: url("../imgs/separador-articles.png") no-repeat center center;
+        background: url("../imgs/separador-articles.svg") no-repeat center center;
+        clear: both;
+        width: 100%;
+        height: 190px;
+        margin-bottom: 100px;
+    }
+
+    .ss-diferencial
+    {
+        margin-bottom: 50px;
+        overflow: hidden;
+        position: relative;
+        @include make-lg-column(6);
+
+        figure 
+        {
+            float: left;
+            width: 190px;
+
+            img 
+            {
+                max-width: 160px;
+                // margin-right: 60px;
+            }
+        }
+    }
+
+    .ss-item-conteudo 
+    {
+
+        overflow: hidden;
+        padding-right: 10px;
+
+        .ss-conteudo-interno
+        {
+            height: 160px;
+            overflow: hidden;
+        }
+
+        h4 
+        {
+            font-weight: $fontWeightBold;
+            margin: 0;
+        }
+
+        p 
+        {
+            font-size: $fontSizeBase * 1.5;
+            font-weight: $fontWeightMedium;
+            margin: 15px 0;
+            //text-align: justify;
+        }
+
+        .link-mais 
+        {
+            color: $colorDestaque1;
+            display: block;
+            float: right;
+            font-size: $fontSizeBase * 1.5;
+            font-weight: $fontWeightSemiBold;
+            margin: 8px 0;
+
+            i 
+            {
+                color: $colorDestaque1;
+            }
+        }
+    }
+
+    .box-loader
+    {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .box-loader-conteudo 
+    {
+        position: relative;
+        clear: both;
+        margin-bottom: 50px;
+        //display: none;
+
+        .btn-close 
+        {
+            background: $colorDestaque1;
+            border-radius: $borderRadius;
+            cursor: pointer;
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            width: 40px;
+            height: 40px;
+            padding: 7px 10px;
+            text-align: center;
+
+            i 
+            {
+                color: $secondaryColor;
+            }
+        }
+
+        .loader-conteudo 
+        {
+            background: $colorDestaque2;
+            padding: 20px;
+        }
+
+        .conteudo-load 
+        {
+            border: 3px dashed $secondaryColor;
+            padding: 10px 40px 20px;
+
+            h4 
+            {
+                color: $secondaryColor;
+                margin: 0;
+                padding: 10px 0;
+            }
+    
+            p 
+            {
+                color: $secondaryColor;
+                font-size: $fontSizeBase * 1.4;
+                font-weight: $fontWeightMedium;
+                line-height: 1.6em;
+                margin: 0;
+            }
+    
+        }
+
     }
