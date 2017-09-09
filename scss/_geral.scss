@@ -94,15 +94,26 @@
                 margin: 0;
             }
         }
+
+        &.ss-sobre
+        {
+            .ss-box
+            {
+                padding-top: 0;
+            }
+        }
+
     }
 
     .ss-ct-mr
     {
+        @include make-md-column(7);
         @include make-lg-column(7);
     }
 
     .ss-ct-mn
     {
+        @include make-md-column(5);
         @include make-lg-column(5);
     }
     
@@ -154,13 +165,14 @@
     {
            
         position: relative;
-        padding: 80px 0;
+        padding: 80px 0 30px;
 
         &::after 
         {
             content: "";
-            background: url("../imgs/bg-sketch.png") no-repeat 50% 0;
-            background: url("../imgs/bg-sketch.svg") no-repeat 50% 0;            
+            background: url("../imgs/bg-sketch.png") no-repeat 0 -25px;
+            background: url("../imgs/bg-sketch.svg") no-repeat 0 -25px;
+            background-size: cover;            
             position: absolute;
             top: 0;
             left: 0;
@@ -195,7 +207,7 @@
         {
             h2 
             {
-                padding-top: 0;
+                padding-top: 40px;
             }
         }
     }
@@ -211,17 +223,25 @@
     {
         background: url("../imgs/separador-articles.png") no-repeat center center;
         background: url("../imgs/separador-articles.svg") no-repeat center center;
+        background-size: cover;
         clear: both;
         width: 100%;
         height: 190px;
         margin-bottom: 100px;
+
+        @include breakpoint(max-width ($largeDesktop - 1))
+        {
+            margin-bottom: 0;    
+        }
+
     }
 
     .ss-diferencial
     {
-        margin-bottom: 50px;
+        margin: 40px 0 10px;
         overflow: hidden;
         position: relative;
+        @include make-md-column(6);
         @include make-lg-column(6);
 
         figure 
@@ -246,6 +266,7 @@
         .ss-conteudo-interno
         {
             height: 160px;
+            min-height: 160px;
             overflow: hidden;
         }
 
@@ -253,6 +274,12 @@
         {
             font-weight: $fontWeightBold;
             margin: 0;
+
+            @include breakpoint(max-width ($largeDesktop - 1))
+            {
+                line-height: .9em;
+                font-size: $fontSizeBase * 1.8;    
+            }
         }
 
         p 
@@ -272,9 +299,24 @@
             font-weight: $fontWeightSemiBold;
             margin: 8px 0;
 
+            &.link-others
+            {
+                @include breakpoint(0 ($allDesktop - 1)){
+                    display: none;
+                }
+            }
+
+            &.link-mobile
+            {
+                @include breakpoint($allDesktop){
+                    display: none;
+                }
+            }
+
             i 
             {
                 color: $colorDestaque1;
+                margin-left: 10px;
             }
         }
     }
@@ -290,8 +332,8 @@
     {
         position: relative;
         clear: both;
-        margin-bottom: 50px;
-        //display: none;
+        height: 0;
+        overflow: hidden;
 
         .btn-close 
         {
@@ -299,8 +341,8 @@
             border-radius: $borderRadius;
             cursor: pointer;
             position: absolute;
-            right: -20px;
-            top: -20px;
+            right: 0;
+            top: 0;
             width: 40px;
             height: 40px;
             padding: 7px 10px;
@@ -316,12 +358,26 @@
         {
             background: $colorDestaque2;
             padding: 20px;
+            margin-top: 20px;
         }
 
         .conteudo-load 
         {
-            border: 3px dashed $secondaryColor;
             padding: 10px 40px 20px;
+            //height: 262px;
+            position: relative;
+            
+            &::after 
+            {
+                content: "";
+                border: 3px dashed $secondaryColor;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
 
             h4 
             {
