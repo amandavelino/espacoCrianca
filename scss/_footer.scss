@@ -2,31 +2,86 @@
 {
     background: $colorDestaque1;
     padding: 40px 0;
-
-    @include breakpoint($allCelular)
-    {
-        padding-top: 0;
-    }
+    position: relative;
 
     * 
     {
         color: $secondaryColor;
     }
 
+    p 
+    {
+        margin: 0;
+    }
+
+    .redes-sociais
+    {
+        li
+        {
+            a 
+            {
+                background: $secondaryColor;
+
+                &:hover, &:focus 
+                {
+                    background: $secondaryColor;
+                }
+
+                i 
+                {
+                    color: $colorDestaque1;
+                }
+            }
+        }
+    }
+
+    .ss-ct 
+    {
+        @include make-row();
+    }
+
     .ss-footer-box
     {
-        padding: 0 15px;
-        width: 33.3333%;
-        float: right;
-        position: relative;
-    
-        @include breakpoint($allCelular)
+        @include make-lg-column(4);
+
+        &.ss-logo 
         {
-            width: 90%;
-            float: none;
-            padding: 20px 0;
-            margin: 0 auto;
-            overflow: hidden;
-        } 
+            text-align: center;
+            a 
+            {
+                display: block;
+            }
+        }
+
+        &.ss-mail-ft
+        {
+            text-align: right;
+        }
+    }
+
+    .sub-footer 
+    {
+        clear: both;
+        width: 100%;
+        position: relative;
+    }
+
+    .madeBy 
+    {
+        width: 200px;
+        float: right;
+
+        a 
+        {
+            float: right;
+        }
+
+        p 
+        {
+            font-size: $fontSizeBase * 1.4;
+            float: left;
+            line-height: 3.5em;
+            margin: 0;
+        }
     }
 }

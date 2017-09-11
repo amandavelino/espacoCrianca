@@ -3,8 +3,14 @@
 <script src="./js/smoothscroll.min.js"></script>
 <script src="./bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <?php /* Lightview */ ?>
-<script type="text/javascript" src="./js/spinners/spinners.min.js"></script>
-<script type="text/javascript" src="./js/lightview/lightview.js"></script>
+<script src="./js/spinners/spinners.min.js"></script>
+<script src="./js/lightview/lightview.js"></script>
+<?php /* Maps API Javascript */ ?>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKUSCO1t-zVQWRsD9JdHZjnT36ZjPvy7M&amp;sensor=true"></script>
+<!-- Caixa de informação -->
+<script src="./js/infobox.js"></script>
+<script src="./js/markerclusterer.js"></script>
+<script src="./js/mapa.js"></script>
 <script>
 
     $(document).ready(function(){ 
@@ -154,6 +160,18 @@
             
             return false;
         });//
+
+        //Testemunhos
+        $('.owl-testemunhos').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true,              
+            items: 1,
+            nav: true,
+            navText: ['<i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>','<i class="fa fa-arrow-circle-right fa-2x" aria-hidden="true"></i>'],
+            loop: true,
+            margin: 0
+        });        
 
     });//
     

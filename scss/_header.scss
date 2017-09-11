@@ -11,37 +11,6 @@
     text-align: center;
 }
 
-.redes-sociais
-{
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    li
-    {
-        border-radius: $borderRadius;
-        float: left;
-        margin: 0 5px;
-        padding: 0;
-        list-style: none;
-        width: 35px;
-        height: 35px;
-        overflow: hidden;
-        a 
-        {
-            background: $colorDestaque2;
-            color: $secondaryColor;
-            display: block;
-            padding: 5px 0;
-            text-align: center;
-            i 
-            {
-                font-size: 1em;
-                line-height: 1em;
-            }
-        }
-    }
-}
-
 .logo 
 {
     display: block;

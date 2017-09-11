@@ -6,7 +6,7 @@
         </div>
     </header>
 
-    <div class="sessao ss-box ss-proposta">
+    <div class="sessao ss-box ss-proposta-ct">
 
         <div class="container">
 

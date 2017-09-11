@@ -51,6 +51,76 @@
         text-align: right;
     }
 
+/* Redes sociais */    
+
+    .redes-sociais
+    {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        li
+        {
+            border-radius: $borderRadius;
+            float: left;
+            margin: 0 5px;
+            padding: 0;
+            list-style: none;
+            width: 35px;
+            height: 35px;
+            overflow: hidden;
+            a 
+            {
+                background: $colorDestaque2;
+                color: $secondaryColor;
+                display: block;
+                padding: 5px 0;
+                text-align: center;
+                transition: $transitionAll;
+
+                &:hover, &:focus 
+                {
+                    background: $colorDestaque1;
+                }
+
+                i 
+                {
+                    font-size: 1em;
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+
+/* Botoes */
+
+    .btn 
+    {
+        background: $colorDestaque2;
+        border: 0 none;
+        color: $secondaryColor;
+        display: inline-block;
+        font-size: $fontSizeBase * 2.2;
+        font-weight: $fontWeightSemiBold;
+        line-height: 1em;
+        text-align: center;
+        padding: 20px 40px;
+        outline: none;
+        transition: $transitionAll;
+        
+        &.btn-submit 
+        {
+            float: right;
+            margin-top: 20px;
+        }
+
+        &:hover, &:focus 
+        {
+            background: $colorDestaque1;
+            color: $secondaryColor;
+        }
+
+    }        
+
 /* Títulos */
 
     h1, h2, h3, h4, h5, h6 
@@ -147,17 +217,27 @@
 
 /* Sessão Proposta */
 
-    .ss-proposta
+    .ss-proposta-ct
     {
         padding-top: 0;
-    }
-
-    .ss-proposta-video
-    {
         .container 
         {
-            background: url("../imgs/bg-tintas.jpg") no-repeat center right;
-            //background: url("../imgs/bg-tintas.svg") no-repeat center right;
+            position: relative;
+            clear: both;
+            &::before 
+            {
+                background: url("../imgs/bgs-tintas/bg-tintas1.png") no-repeat 50%;
+                background: url("../imgs/bgs-tintas/bg-tintas1.svg") no-repeat 50%;
+
+                content: "";
+                display: block;
+                width: 640px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                opacity: .5;
+            }
         }
     }
 
@@ -180,6 +260,26 @@
             height: 100%;
             opacity: .5;
             z-index: -1;
+        }
+
+        .container 
+        {
+            position: relative;
+            clear: both;
+            &::before 
+            {
+                background: url("../imgs/bgs-tintas/bg-tintas2.png") no-repeat 160px 0;
+                background: url("../imgs/bgs-tintas/bg-tintas2.svg") no-repeat 160px 0;
+
+                content: "";
+                display: block;
+                width: 640px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                opacity: .5;
+            }
         }
 
         .ss-img
@@ -395,6 +495,306 @@
                 margin: 0;
             }
     
+        }
+
+    }
+
+/* Sessão Depoimentos */
+
+    .ss-depoimentos 
+    {
+        background: $bgColorDepoimentos url("../imgs/bg-depoimentos.jpg") no-repeat center center;
+        background: $bgColorDepoimentos url("../imgs/bg-depoimentos.svg") no-repeat center center;
+        background-size: cover;
+        padding: 150px 0 200px;
+
+        .owl-nav
+        {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .owl-prev 
+        {
+            right: 40px;
+        }
+
+        .owl-next 
+        {
+            right: 0;
+        }    
+
+        .owl-prev,
+        .owl-next
+        {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            text-align: center; 
+            i
+            {
+                color: $secondaryColor;
+            }
+        }
+
+        .item-depoimento
+        {
+            text-align: left;
+
+            figure 
+            {
+                @include make-lg-column(4);
+            }
+
+            blockquote
+            {
+                padding: 0;
+                margin: 0;
+                @include make-lg-column(8);
+            }
+
+            img 
+            {
+                border-radius: $borderRadius;
+                width: auto;
+                float: right;
+            }
+
+            p 
+            {
+                font-weight: $fontWeightMedium;
+                font-size: $fontSizeBase * 1.6;
+                line-height: 1.5em;
+                margin: 15px 0;
+
+                &::before 
+                {
+                    content: '"';
+                }
+
+                &::after 
+                {
+                    content: '"';
+                }            
+
+            }
+
+            footer 
+            {
+                text-align: right;
+                display: block;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+
+            h5
+            {
+                color: $primaryColor;
+                font-size: $fontSizeBase * 1.6;
+                font-weight: $fontWeightBold;
+                margin: 0;
+                padding: 0;
+            }
+
+
+        }
+
+    }
+
+/* Sessão Galeria */
+
+    .ss-galeria 
+    {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .ss-box 
+        {
+            padding: 0;
+        }
+
+        .ss-galeria-row
+        {
+            overflow: hidden;
+        }
+
+        .ss-galeria-item
+        {
+            width: 20%;
+            float: left;
+        }
+
+    }
+
+/* Sessão Mapa */
+
+    .ss-mapa 
+    {
+        height: 390px;
+        
+        #mapa 
+        {
+            width: 100%;
+            height: 390px;
+        }
+
+        .infoBox
+        {
+            background-color: $secondaryColor;
+            width: 300px;
+            font-family: $primaryFont;
+            font-size: $fontSizeBase * 1.4;
+            border-radius: 3px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .infoBox p
+        {
+            padding: 0;
+        }
+
+        .infoBox:before
+        {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid $secondaryColor;
+            top: -10px;
+            content: "";
+            height: 0;
+            position: absolute;
+            width: 0;
+            left: 140px;
+        }
+        
+    }
+
+/* Sessão Contato */
+
+    .ss-contato 
+    {
+
+        .ss-box 
+        {
+            padding: 0 0 50px;
+
+            header 
+            {
+                padding: 100px 0 40px 100px;
+
+                h2 
+                {
+                    padding: 0;
+                }
+
+            }
+
+        }
+
+        .ss-contato-lft 
+        {
+            @include make-sm-column(6);
+            @include make-md-column(6);
+            @include make-lg-column(6);
+        }
+
+        .ss-contato-rgt 
+        {
+            @include make-sm-column(5);
+            @include make-md-column(5);
+            @include make-lg-column(5);
+            float: right!important;
+        }        
+
+        .ss-info 
+        {
+            margin: 40px 0;
+
+            .icon 
+            {
+                float: left;
+
+                i 
+                {
+                    color: $iconsContato;
+                    font-size: $fontSizeBase * 3.2;
+                }
+
+                .fa-envelope-o 
+                {
+                    font-size: $fontSizeBase * 2.5;
+                }
+            }
+
+            h5
+            {
+                color: $primaryColor;
+                font-size: $fontSizeBase * 1.8;
+                font-weight: $fontWeightBold;
+                line-height: 1.5em;
+                margin: 0 0 0 40px;
+                padding: 0;
+            }
+
+            p 
+            {
+                line-height: 1.4em;
+                margin: 0 0 0 40px;
+            }
+
+        }
+    }
+
+    .formulario 
+    {
+
+        .item-form 
+        {
+            margin-bottom: 10px;
+            overflow: hidden;
+            
+            p  
+            {
+                margin: 15px 0;
+            }
+
+            label 
+            {
+                display: inline-block;
+                margin: 0;
+                width: 100%;
+
+                &.inline-radio
+                {
+                    padding: 0 0 0 30px;
+                    width: auto;
+
+                    span 
+                    {
+                        padding-left: 10px;
+                    }
+                }
+
+                p  
+                {
+                    margin: 0;
+                }
+
+                .input 
+                {
+                    background-color: $bgColorInput;
+                    border-radius: 10px;
+                    border: 1px solid $colorBorderInput;
+                    font-weight: $fontWeightMedium;
+                    outline: none;
+                    padding: 8px 15px;
+                    width: 100%;
+                    margin: 5px 0;
+                }
+            }
+
         }
 
     }

@@ -9,6 +9,10 @@
             <?php include("./incs/slider.php"); ?>
             <?php include("./incs/proposta.php"); ?>
             <?php include("./incs/sobre.php"); ?>
+            <?php include("./incs/depoimentos.php"); ?>
+            <?php include("./incs/galeria.php"); ?>
+            <?php include("./incs/contato.php"); ?>
+            <?php include("./incs/mapa.php"); ?>
         </main>
     </div>
     <!-- end .ss-wrapper -->
