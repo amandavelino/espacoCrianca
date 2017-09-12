@@ -17,6 +17,16 @@
     width: 215px;
     margin: 0 auto;
 
+    @include breakpoint($smallDesktop)
+    {
+        width: 150px;
+    }
+
+    @include breakpoint($tablet)
+    {
+        width: 150px;
+    }      
+
     *
     {
         max-width: 100%;
@@ -29,6 +39,7 @@
 
     h6 
     {
+        color: $primaryColor;
         display: inline-block;
         font-size: $fontSizeBase * 1.5;
         line-height: 1.2em;
@@ -62,4 +73,53 @@
         }        
 
     }
+
+    .menu-nav 
+    {
+        display: none;
+        margin-top: 15px;
+        background: $colorDestaque1;
+        padding: 15px;
+        position: absolute;
+        width: 350px;
+        right: 15px;
+        z-index: -10;
+        
+        ul 
+        {
+            border: 3px dashed #fff;
+            margin: 0;
+            padding: 20px 0;
+
+            li 
+            {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            a 
+            {
+                color: $secondaryColor;
+                display: inline-block;
+                font-size: $fontSizeBase * 2.1;
+                font-weight: $fontWeightMedium;
+                line-height: 1.5em;
+                padding: 10px 25px;
+
+                @include breakpoint($smallDesktop)
+                {
+                    font-size: $fontSizeBase * 1.8;
+                }  
+
+                @include breakpoint($tablet)
+                {
+                    font-size: $fontSizeBase * 1.8;
+                }  
+
+            }
+
+        }
+    }
+
 }

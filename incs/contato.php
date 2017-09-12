@@ -1,4 +1,4 @@
-<section class="sessao ss-contato">
+<section id="contato" class="sessao ss-contato">
 
     <div class="sessao ss-box">
 
@@ -73,7 +73,7 @@
                     <div class="item-form">
                         <p>Melhores dias para a visita: <strong>Segundas e Quartas</strong></p>
                         <p>Melhor horário: 
-                            <label class="inline-radio"><input type="radio" name="horarioContato" value="manha"> <span>Manhã</span></label>
+                            <label class="inline-radio"><input type="radio" name="horarioContato" checked="checked" value="manha"> <span>Manhã</span></label>
                             <label class="inline-radio"><input type="radio" name="horarioContato" value="tarde"> <span>Tarde</span></label>
                        </p>
                     </div> 

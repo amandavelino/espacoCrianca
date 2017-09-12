@@ -1,4 +1,4 @@
-<section class="sessao ss-galeria">
+<section id="fotos"  class="sessao ss-galeria">
 
     <div class="sessao ss-box">
 

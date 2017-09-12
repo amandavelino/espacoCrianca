@@ -14,7 +14,7 @@
                         
                         <div class="titulo-slide">
                             <h2><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></h2>
-                            <a href="#" class="btn">Marcar uma visita</a>
+                            <a href="#" class="btn btn-slider">Marcar uma visita</a>
                         </div><!-- conteudo-slide -->           
 
                     </div>
@@ -36,7 +36,7 @@
                         
                         <div class="titulo-slide">
                             <h2><span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</span></h2>
-                            <a href="#" class="btn">Marcar uma visita</a>
+                            <a href="#" class="btn btn-slider">Marcar uma visita</a>
                         </div><!-- conteudo-slide -->          
 
                     </div>

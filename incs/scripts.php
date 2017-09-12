@@ -13,8 +13,57 @@
 <script src="./js/mapa.js"></script>
 <script>
 
+    var botaoMenu = $("#menu-mobile"),
+        menu = $("#menu-principal");
+
+    function goToSessao(e)
+    {
+        var sessao = $(e).offset().top;
+        $("html, body").stop().animate({ scrollTop: sessao }, 700, "easeInOutQuad"); //easeInOutQuart
+    }//end goToSessao
+
+    function openMenu()
+    {
+        menu.css({zIndex: 10});
+        menu.stop().animate({
+            opacity: 1
+        }, 500, "easeInOutQuad", function() {
+            $(this).addClass("menu-ativo");
+        }); 
+    }//end openMenu
+    
+    function closeMenu()
+    {
+        menu.stop().animate({
+            opacity: 0
+        }, 500, "easeInOutQuad", function() {
+            $(this).removeClass("menu-ativo").css({zIndex: -10});
+        });  
+    }//end closeMenu
+
     $(document).ready(function(){ 
 
+        //Menu
+        menu.css({display: "block", "opacity": 0});
+        botaoMenu.click(function(){
+            if(!menu.hasClass("menu-ativo")){
+                openMenu();
+            }else{
+                closeMenu();
+            }
+            return false;
+        });//
+
+        //Ao clicar nos links do menu
+        $("#menu-principal a").click(function()
+        {
+            var e = $(this).attr("href");
+            goToSessao(e);
+            closeMenu();
+            return false;
+        });
+
+        //Slider Principal
         $('.owl-home').owlCarousel({
             autoplay: true,
             autoplayTimeout: 7000,
@@ -29,6 +78,7 @@
             margin: 0
         });
 
+        //Sessão Sobre nossa escola
         var id_loader = 0;
 
         //Carregando os valores de cada artigo nas versões 992px em diante

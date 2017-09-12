@@ -1,4 +1,4 @@
-<section class="sessao ss-proposta-midia">
+<section id="proposta" class="sessao ss-proposta-midia">
 
     <header>
         <div class="container">
@@ -44,7 +44,7 @@
     </div>
     <!-- end .ss-proposta -->
 
-    <div class="sessao ss-box ss-midia">
+    <div id="apresentacao" class="sessao ss-box ss-midia">
 
         <div class="container">
 

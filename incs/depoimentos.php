@@ -1,4 +1,4 @@
-<section class="sessao ss-depoimentos">
+<section id="depoimentos" class="sessao ss-depoimentos">
 
     <div class="sessao ss-box">
 

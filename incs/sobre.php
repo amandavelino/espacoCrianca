@@ -1,4 +1,4 @@
-<section class="sessao ss-sobre">
+<section id="sobre" class="sessao ss-sobre">
 
     <header>
         <div class="container">
@@ -27,6 +27,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Inteligências Múltiplas</h4>
+                                    </header>
+                                    <p>Nossa Proposta Pedagógica está baseada na Teoria das Inteligências Múltiplas, onde a criança é estimulada nas diversas áreas do conhecimento de forma lúdica, interativa e multidisciplinar, visando o desenvolvimento de...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Inteligências Múltiplas</h4>
@@ -34,6 +42,7 @@
                                     <p>Nossa Proposta Pedagógica está baseada na Teoria das Inteligências Múltiplas, onde a criança é estimulada nas diversas áreas do conhecimento de forma lúdica, interativa e multidisciplinar, visando o desenvolvimento de forma integral. Nossa Proposta Pedagógica está baseada na Teoria das Inteligências Múltiplas, onde a criança é estimulada nas diversas áreas do conhecimento de forma lúdica, interativa e multidisciplinar, visando o desenvolvimento de forma integral. Nossa Proposta Pedagógica está baseada na Teoria das Inteligências Múltiplas, onde a criança é estimulada nas diversas áreas do conhecimento de forma lúdica, interativa e multidisciplinar, visando o desenvolvimento de forma integrtal. Acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes. Acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -51,6 +60,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Centro de Desenvolvimento e Interesse</h4>
+                                    </header>
+                                    <p>Espaços de apredizadem totalmente estruturado para o desenvolvimento das inteligências múltiplas em áreas específicas do conhecimento. São eles: CDI Linguagem, e acreditamos que o cuidar e o educar caminham juntos com a afetividade...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Centro de Desenvolvimento e Interesse</h4>
@@ -58,6 +75,7 @@
                                     <p>Espaços de apredizadem totalmente estruturado para o desenvolvimento das inteligências múltiplas em áreas específicas do conhecimento. São eles: CDI Linguagem, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -100,6 +118,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Pedagogia Afetiva</h4>
+                                    </header>
+                                    <p>Acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes, e acreditamos que o cuidar e o educar caminham juntos com...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Pedagogia Afetiva</h4>
@@ -107,6 +133,7 @@
                                     <p>Acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -124,6 +151,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Educação Financeira</h4>
+                                    </header>
+                                    <p>Propomos um trabalho de conscientização do bom uso do dinheiro, aprendendo desde pequenos a lidar com situações financeiras e planejar seus sonhos dentro de sua realidade, e acreditamos que o cuidar e o educar caminham juntos com a afetividade...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Educação Financeira</h4>
@@ -131,6 +166,7 @@
                                     <p>Propomos um trabalho de conscientização do bom uso do dinheiro, aprendendo desde pequenos a lidar com situações financeiras e planejar seus sonhos dentro de sua realidade, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -154,6 +190,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Inglês Bilíngue</h4>
+                                    </header>
+                                    <p>Promovemos desde cedo o contato com a língua estrangeira (inglês) através de atividades lúdicas diversificadas que facilitam a aprendizagem, desta forma as crianças se apropriam da segunda língua de forma, e acreditamos que...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Inglês Bilíngue</h4>
@@ -161,6 +205,7 @@
                                     <p>Promovemos desde cedo o contato com a língua estrangeira (inglês) através de atividades lúdicas diversificadas que facilitam a aprendizagem, desta forma as crianças se apropriam da segunda língua de forma, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -178,6 +223,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Educação Musical</h4>
+                                    </header>
+                                    <p>As crianças quando brincam ou interagem com o universo sonoro acabam descobrindo, mesmo que de maneira simples, formas diferentes de se fazer música. É por meio dela que nas aulas de Educação Musical possibilitamos, e acreditamos...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Educação Musical</h4>
@@ -185,6 +238,7 @@
                                     <p>As crianças quando brincam ou interagem com o universo sonoro acabam descobrindo, mesmo que de maneira simples, formas diferentes de se fazer música. É por meio dela que nas aulas de Educação Musical possibilitamos, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -225,6 +279,14 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Iniciação Atlética</h4>
+                                    </header>
+                                    <p>Através da iniciação esportiva, a criança desenvolve habilidades motoras que possibilitarão o despertar da inteligência corporal – cinestésica, a qual está diretamente relacionada ao movimento em si, e acreditamos que o cuidar...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Iniciação Atlética</h4>
@@ -232,6 +294,7 @@
                                     <p>Através da iniciação esportiva, a criança desenvolve habilidades motoras que possibilitarão o despertar da inteligência corporal – cinestésica, a qual está diretamente relacionada ao movimento em si, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
                                 <!-- end .ss-conteudo-interno -->
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -249,13 +312,22 @@
 
                             <div class="ss-item-conteudo">
 
+                                <div class="ss-conteudo-resumo">
+                                    <header>
+                                        <h4>Alimentação Saudável</h4>
+                                    </header>
+                                    <p>Criar texto. As crianças quando brincam ou interagem com o universo sonoro acabam descobrindo, mesmo que de maneira simples, formas diferentes de se fazer música. É por meio dela que nas aulas de Educação Musical, e acreditamos...</p>
+                                </div>
+                                <!-- end .ss-conteudo-resumo -->
+
                                 <div class="ss-conteudo-interno">
                                     <header>
                                         <h4>Alimentação Saudável</h4>
                                     </header>
                                     <p>Criar texto. As crianças quando brincam ou interagem com o universo sonoro acabam descobrindo, mesmo que de maneira simples, formas diferentes de se fazer música. É por meio dela que nas aulas de Educação Musical, e acreditamos que o cuidar e o educar caminham juntos com a afetividade, pois o aprender com amor potencializa o desenvolvimento cognitivo e emocional da criança, fazendo-as felizes.</p>
                                 </div>
-                                <!-- end .ss-conteudo-interno -->
+                                <!-- end .ss-conteudo-interno -->                                
+
                                 <a href="#" class="link-mais link-others">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                 <a href="#" class="link-mais link-mobile">Saiba mais<i class="fa fa-caret-down" aria-hidden="true"></i></a>
 
@@ -272,10 +344,7 @@
                 <!-- end .container -->
 
             </div>
-            <!-- end .box-articles -->     
-            
-            <div class="separador-articles"></div>
-            <!-- end .separador-articles -->    
+            <!-- end .box-articles -->      
 
             <?php //End ?>            
 

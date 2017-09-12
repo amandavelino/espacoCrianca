@@ -42,6 +42,8 @@
 
     .ss-footer-box
     {
+        @include make-sm-column(4);
+        @include make-md-column(4);
         @include make-lg-column(4);
 
         &.ss-logo 
