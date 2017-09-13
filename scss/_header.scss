@@ -67,6 +67,10 @@
     {
         width: 100%;
         transition: $transitionAll;
+        @include breakpoint($allCelular)
+        {
+            margin-left: -18px;
+        }      
     }
 }
 
