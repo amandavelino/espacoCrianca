@@ -6,7 +6,7 @@
 <script src="./js/spinners/spinners.min.js"></script>
 <script src="./js/lightview/lightview.js"></script>
 <?php /* Maps API Javascript */ ?>
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKUSCO1t-zVQWRsD9JdHZjnT36ZjPvy7M&amp;sensor=true"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKUSCO1t-zVQWRsD9JdHZjnT36ZjPvy7M"></script>
 <!-- Caixa de informação -->
 <script src="./js/infobox.js"></script>
 <script src="./js/markerclusterer.js"></script>
@@ -14,11 +14,27 @@
 <script>
 
     var botaoMenu = $("#menu-mobile"),
-        menu = $("#menu-principal");
+        menu = $("#menu-principal"),
+        logo = $(".logo > img"),
+        scrolled = $(window).scrollTop();
+
+    function checarPosicaoScroll(){
+
+        if(scrolled > 196){
+            if(!$("body").hasClass("smaller-menu")){
+                $("body").addClass("smaller-menu");
+            }//
+         }else{
+            if($("body").hasClass("smaller-menu")){
+                $("body").removeClass("smaller-menu");
+            }//
+         }//end if
+
+    }// end checarPosicaoScroll
 
     function goToSessao(e)
     {
-        var sessao = $(e).offset().top;
+        var sessao = $(e).offset().top - 90; //offset das sessões margin-top para o header
         $("html, body").stop().animate({ scrollTop: sessao }, 700, "easeInOutQuad"); //easeInOutQuart
     }//end goToSessao
 
@@ -37,16 +53,17 @@
         menu.stop().animate({
             opacity: 0
         }, 500, "easeInOutQuad", function() {
-            $(this).removeClass("menu-ativo").css({zIndex: -10});
+            $(this).removeClass("menu-ativo").css({zIndex: -10, display: "none"});
         });  
     }//end closeMenu
 
     $(document).ready(function(){ 
 
         //Menu
-        menu.css({display: "block", "opacity": 0});
+        menu.css({"opacity": 0});
         botaoMenu.click(function(){
             if(!menu.hasClass("menu-ativo")){
+                menu.css({display: "block"});
                 openMenu();
             }else{
                 closeMenu();
@@ -201,7 +218,7 @@
                 }); 
             }else{
                 $(this).closest(".ss-item-conteudo").find(".ss-conteudo-interno").stop().animate({
-                    height: 160
+                    height: 170
                 }, 500, "easeInOutQuad", function() {
                     artigo.removeClass("opened");
                     $(this).closest(".ss-item-conteudo").find(".link-mobile").html("Saiba mais<i class='fa fa-caret-down' aria-hidden='true'></i>");
@@ -225,4 +242,12 @@
 
     });//
     
+    $(window).on('scroll', function(){
+
+        //atualizando a posição quando o scroll ocorrer...
+        scrolled = $(window).scrollTop();
+        checarPosicaoScroll();
+
+    });//on scroll
+
 </script> 

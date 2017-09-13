@@ -1,5 +1,7 @@
 <section id="ss-slider">
 
+    <?php include("redesSociais.php"); ?>
+
     <div class="slider-home">
 
         <div class="owl-carousel owl-theme owl-home">

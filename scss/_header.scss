@@ -1,6 +1,28 @@
 #hd-principal
 {
+    background: $secondaryColor;
+    border-bottom: 1px solid transparent;
     padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: $transitionAll;
+
+    @include breakpoint($allCelular)
+    {
+        border-bottom-color: #f1f1f1;
+        padding: 10px 0;
+    }     
+
+    .redes-sociais
+    {
+        @include breakpoint($allCelular)
+        {
+            display: none;
+        }
+    }
 }
 
 .ss-box-header 
@@ -9,6 +31,14 @@
     @include make-md-column(4);
     @include make-lg-column(4);
     text-align: center;
+
+    @include breakpoint($allCelular)
+    {
+        float: left;
+        width: 33.33333%;
+        padding: 0;     
+    }  
+
 }
 
 .logo 
@@ -16,6 +46,7 @@
     display: block;
     width: 215px;
     margin: 0 auto;
+    transition: $transitionAll;
 
     @include breakpoint($smallDesktop)
     {
@@ -25,17 +56,34 @@
     @include breakpoint($tablet)
     {
         width: 150px;
-    }      
-
-    *
+    } 
+    
+    @include breakpoint($allCelular)
     {
-        max-width: 100%;
+        width: 130px;
+    }     
+
+    img
+    {
+        width: 100%;
+        transition: $transitionAll;
     }
 }
 
 .menu 
 {
     float: right;
+    transition: $transitionAll;
+
+    @include breakpoint($allCelular)
+    {
+        margin-top: 25px;
+    }  
+
+    @include breakpoint($smallCelular)
+    {
+        //margin-top: 0;
+    }      
 
     h6 
     {
@@ -45,6 +93,10 @@
         line-height: 1.2em;
         font-weight: $fontWeightSemiBold;
         margin: 8px 20px;
+        @include breakpoint($smallCelular)
+        {
+            display: none;
+        }         
     }
 
     #menu-mobile 
@@ -85,6 +137,14 @@
         right: 15px;
         z-index: -10;
         
+        @include breakpoint($allCelular)
+        {
+            right: 0;
+            width: 100%;
+            position: fixed;
+            top: 88px;            
+        }
+
         ul 
         {
             border: 3px dashed #fff;
@@ -115,11 +175,38 @@
                 @include breakpoint($tablet)
                 {
                     font-size: $fontSizeBase * 1.8;
-                }  
+                } 
+                
+                @include breakpoint($allCelular)
+                {
+                    font-size: $fontSizeBase * 1.5;
+                }                 
 
             }
 
         }
     }
 
+}
+
+/* Quando o usuário usar o scroll diminui o header */
+
+.smaller-menu
+{
+    #hd-principal
+    {
+        border-bottom-color: #f1f1f1;
+        padding: 10px 0;
+    }
+
+    .logo 
+    {
+        width: 130px;
+    }
+
+    .menu,
+    .redes-sociais 
+    {
+        margin-top: 25px;
+    }
 }

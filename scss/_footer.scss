@@ -4,6 +4,11 @@
     padding: 40px 0;
     position: relative;
 
+    @include breakpoint($allCelular)
+    {
+        padding: 0 0 20px;
+    }    
+
     * 
     {
         color: $secondaryColor;
@@ -16,8 +21,19 @@
 
     .redes-sociais
     {
+        @include breakpoint($allCelular)
+        {
+            text-align: center;
+        }        
+
         li
         {
+            @include breakpoint($allCelular)
+            {
+                display: inline-block;
+                float: none;
+            }              
+
             a 
             {
                 background: $secondaryColor;
@@ -46,18 +62,37 @@
         @include make-md-column(4);
         @include make-lg-column(4);
 
+        @include breakpoint($allCelular)
+        {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
         &.ss-logo 
         {
             text-align: center;
             a 
             {
                 display: block;
+                @include breakpoint($allCelular)
+                {
+                    width: 130px;
+                    margin: 0 auto;
+                }
+                img 
+                {
+                    max-width: 100%;
+                }                
             }
         }
 
         &.ss-mail-ft
         {
             text-align: right;
+            @include breakpoint($allCelular)
+            {
+                text-align: center;
+            }            
         }
     }
 
@@ -73,6 +108,11 @@
         width: 200px;
         float: right;
 
+        @include breakpoint($allCelular)
+        {
+            width: 100px;
+        }   
+
         a 
         {
             float: right;
@@ -84,6 +124,11 @@
             float: left;
             line-height: 3.5em;
             margin: 0;
+            @include breakpoint($allCelular)
+            {
+                font-size: $fontSizeBase * 1.2;
+                line-height: 1.2em;
+            }               
         }
     }
 }
