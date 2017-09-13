@@ -757,8 +757,6 @@
 
         .ss-conteudo-resumo
         {
-            height: 160px;
-            overflow: hidden;
             @include breakpoint(0 ($allDesktop - 1))
             {
                 display: none;
