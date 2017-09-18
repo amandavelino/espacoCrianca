@@ -833,6 +833,32 @@
         height: 0;
         overflow: hidden;
 
+        &.article-impar
+        {
+            .btn-line
+            {
+                left: 0;
+            }
+        }
+
+        &.article-par
+        {
+            .btn-line
+            {
+                right: 0;
+            }
+        }
+
+        .btn-line
+        {
+            background: $colorDestaque1;
+            width: 50%;
+            height: 7px;
+            display: block;
+            position: absolute;
+            top: 13px;   
+        }
+
         .btn-close 
         {
             background: $colorDestaque1;

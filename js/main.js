@@ -99,26 +99,38 @@ $(document).ready(function(){
         //id do item/article
         var id_string = $(this).closest("article").attr("id");
         var id_article = $("#" + id_string);
-        
         //console.log("id_anterior: ", id_anterior);
+
+        var article = $(this).closest("article");
 
         //conteúdo a ser carregado
         var conteudo = id_article.find(".ss-conteudo-interno").html();
         //criando box-loader-conteudo
-        var box_loader_conteudo = "<div class='box-loader-conteudo'><span class='btn-close'><i class='fa fa-times' aria-hidden='true'></i></span><div class='loader-conteudo'><div class='conteudo-load'></div></div></div>";            
+        var box_loader_conteudo = "<div class='box-loader-conteudo'><span class='btn-line'></span><span class='btn-close'><i class='fa fa-times' aria-hidden='true'></i></span><div class='loader-conteudo'><div class='conteudo-load'></div></div></div>";            
         //box-loader mais próxima
         var box_loader = $(this).closest(".box-loader");
         //console.log(conteudo);
 
+        function checarImparPar()
+        {
+            if(article.index() % 2 == 0){
+                box_loader.find(".box-loader-conteudo").addClass("article-impar");
+                box_loader.find(".box-loader-conteudo").removeClass("article-par");
+            }else{  
+                box_loader.find(".box-loader-conteudo").addClass("article-par");
+                box_loader.find(".box-loader-conteudo").removeClass("article-impar");
+            }//            
+        }// 
+
         //Functions
         function openBoxLoaderConteudo()
         {
+            checarImparPar();
             box_loader.find(".box-loader-conteudo").stop().animate({
                 height: altura 
             }, 500, "easeInOutQuad", function() {
 
                 $(this).find(".btn-close").on("click", function(){
-                    console.log('Clicou 1');
                     $(this).closest(".box-loader-conteudo").stop().animate({
                         height: 0
                     }, 500, "easeInOutQuad", function() {
@@ -140,11 +152,10 @@ $(document).ready(function(){
             box_loader.find(".box-loader-conteudo").stop().animate({
                 height: 0
             }, 500, "easeInOutQuad", function() {
-
+                checarImparPar();
                 //inserindo id 
                 $(this).attr("id", "loader-" + id_string);
                 id_loader = $(this).attr("id");
-                console.log("id_loader atual c/ elem: ", id_loader);   
 
                 // Carrega o conteúdo
                 $(this).find(".conteudo-load").html(conteudo);  
