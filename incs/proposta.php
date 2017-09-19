@@ -2,7 +2,7 @@
 
     <header>
         <div class="container">
-            <h2>Proposta Pedagógica</h2>
+            <h2><span class="aviao"></span>Proposta Pedagógica<span class="path"></h2>
         </div>
     </header>
 

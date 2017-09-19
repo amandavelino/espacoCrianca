@@ -2,7 +2,7 @@
 
     <header>
         <div class="container">
-            <h2>Sobre nossa escola</h2>
+            <h2><span class="aviao"></span>Sobre nossa escola<span class="path"></span></h2>
         </div>
     </header>
 

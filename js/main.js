@@ -20,7 +20,18 @@ function checarPosicaoScroll(){
 function goToSessao(e)
 {
     var sessao = $(e).offset().top - 90; //offset das sessões margin-top para o header
-    $("html, body").stop().animate({ scrollTop: sessao }, 700, "easeInOutQuad"); //easeInOutQuart
+    $("html, body").stop().animate({ scrollTop: sessao }, 700, "easeInOutQuad", function(){
+
+        if(e == "#sobre" || e == "#proposta"){
+            var aviao = $(e).find(".aviao");
+            if(!aviao.hasClass("animarAviao")){
+                aviao.addClass("animarAviao");
+                setTimeout(function(){ aviao.removeClass("animarAviao"); }, 1200);
+            }//            
+        }//
+
+    }); //easeInOutQuart
+    console.log(e);
 }//end goToSessao
 
 function openMenu()
@@ -43,6 +54,18 @@ function closeMenu()
 }//end closeMenu
 
 $(document).ready(function(){ 
+
+    //Animacao Aviao
+    var aviao = $(this).find(".aviao");
+    $(".ss-proposta-midia h2, .ss-sobre h2").hover(function(){
+        if(!aviao.hasClass("animarAviao")){
+            aviao.addClass("animarAviao");
+        }//
+    }, function(){
+        if(aviao.hasClass("animarAviao")){
+            aviao.removeClass("animarAviao");
+        }//
+    });//
 
     //Logo do menu... ir para sessão home
     $(".logo, .ss-logo > a").click(function()

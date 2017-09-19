@@ -1,0 +1,84 @@
+.ss-proposta-midia,
+.ss-sobre 
+{
+    header 
+    {
+        h2 
+        {
+            .aviao 
+            {
+                background: url("../imgs/animacoes/aviao-rosa.png") no-repeat 0 0;
+                background: url("../imgs/animacoes/aviao-rosa.svg") no-repeat 0 0;
+                content: "";
+                position: absolute;
+                left: -10px;
+                bottom: -10px;
+                width: 95px;
+                height: 55px;
+                z-index: 10;
+
+                @include breakpoint($allCelular)
+                {
+                    width: 70px;
+                    height: 30px;
+                    margin: 0 auto;
+                    left: 220px;
+                    bottom: initial;
+                    top: 35px;
+                    animation-name: none;
+                }
+
+            }
+
+            .path
+            {
+                //background: url("../imgs/animacoes/path-aviao-rosa.png") no-repeat 0 0;
+                background: url("../imgs/animacoes/path-aviao-rosa.svg") no-repeat 0 0;
+                content: "";
+                display: block;
+                width: 375px;
+                height: 100%;
+                position: absolute;
+                left: -365px;
+                bottom: -65px;
+                opacity: .5;
+                z-index: 0;
+
+                @include breakpoint($smallDesktop)
+                {
+                    left: -325px;
+                }  
+
+                @include breakpoint($tablet)
+                {
+                    left: -250px;
+                    bottom: -45px;
+                }  
+
+                @include breakpoint($allCelular)
+                {
+                    left: -20px;
+                    bottom: -20px;
+                }
+            }            
+        }
+    }
+}
+
+@keyframes animarAviao
+{
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(8deg);}
+    50%  {transform: rotate(-8deg);}
+    75%  {transform: rotate(4deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.animarAviao
+{
+    animation-name: animarAviao;
+    animation-duration: .8s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    transform-origin: center center;
+}

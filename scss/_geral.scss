@@ -410,7 +410,7 @@
                 {
                     padding-left: 15px;
                 }
-
+                /*
                 &::before 
                 {
                     background: url("../imgs/aviao-rosa.png") no-repeat 0 0;
@@ -441,6 +441,7 @@
                     }
 
                 }
+                */
             }
         }
     }
@@ -452,40 +453,41 @@
         {
             position: relative;
             clear: both;
-            &::before 
-            {
-                background: url("../imgs/bgs-tintas/bg-tintas1.png") no-repeat 50%;
-                background: url("../imgs/bgs-tintas/bg-tintas1.svg") no-repeat 50%;
-                content: "";
-                display: block;
-                width: 640px;
-                height: 100%;
-                position: absolute;
-                right: 0;
-                top: 0;
-                opacity: .5;
 
-                @include breakpoint($smallDesktop)
+                &::before 
                 {
-                    width: 500px;
-                }  
+                    background: url("../imgs/bgs-tintas/bg-tintas1.png") no-repeat 50%;
+                    background: url("../imgs/bgs-tintas/bg-tintas1.svg") no-repeat 50%;
+                    content: "";
+                    display: block;
+                    width: 640px;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    opacity: .5;
 
-                @include breakpoint($tablet)
-                {
-                    width: 400px;
-                    background-position: 0 35%;
-                }  
+                    @include breakpoint($smallDesktop)
+                    {
+                        width: 500px;
+                    }  
 
-                @include breakpoint($allCelular)
-                {
-                    background-position: 100% 100%;
-                    width: 380px;
-                    margin: 0 auto;
-                    right: 50%;
-                    margin-right: -190px;
+                    @include breakpoint($tablet)
+                    {
+                        width: 400px;
+                        background-position: 0 35%;
+                    }  
+
+                    @include breakpoint($allCelular)
+                    {
+                        background-position: 100% 100%;
+                        width: 380px;
+                        margin: 0 auto;
+                        right: 50%;
+                        margin-right: -190px;
+                    }
+
                 }
-
-            }
         }
     }
 
